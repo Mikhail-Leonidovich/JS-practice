@@ -7,6 +7,7 @@ let inputOne = document.querySelector("input[name=inputOne]");
 let inputTwo = document.querySelector("input[name=inputTwo]");
 let inputThree = document.querySelector("input[name=inputThree]");
 let inputOut = document.querySelector("input[name=inputOut]");
+let btnClear = document.querySelector(".btn-clear");
 
 btnTask.addEventListener("click", () => {
   task.classList.toggle("mod");
@@ -35,4 +36,8 @@ btnCount.addEventListener("click", () => {
     sum = sum + a;
   }
   inputOut.value = sum;
+});
+
+btnClear.addEventListener("click", () => {
+  localStorage.clear();
 });
