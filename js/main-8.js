@@ -8,8 +8,8 @@ function getDateValue() {
     arrayOfStrings.push(elem);
     delete arrayOfStrings[i];
   }
-  arrayOfStrings = arrayOfStrings.reverse();
-  getDate.value = arrayOfStrings.join("-");
+  arrayOfStrings = arrayOfStrings.reverse().join("-");
+  getDate.value = arrayOfStrings;
 }
 
 getDate.addEventListener("blur", () => {
