@@ -20,3 +20,5 @@ let go = () => {
 let stop = () => {
   window.clearInterval(window.funcId);
 };
+
+window.addEventListener()
